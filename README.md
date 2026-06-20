@@ -43,8 +43,9 @@ currency-converter-api
     └── test
 ```
 
+## Testing the API
 
-```bash
+```text
 mvn spring-boot:run
 ```
 
@@ -72,7 +73,8 @@ src/main/resources/application.yml
 ## API Endpoints
 ### 1. Convert Currency
 
-```bash
+```text
+
 curl -X POST http://localhost:8082/api/conversions \
   -H "Content-Type: application/json" \
   -H "X-API-KEY: demo-key-123" \
@@ -99,14 +101,15 @@ Sample response:
 
 ### 2. Get Conversion History
 
-```bash
-curl http://localhost:8082/api/conversions/history \
+```text
+ 
+ curl http://localhost:8082/api/conversions/history \
   -H "X-API-KEY: demo-key-123"
 ```
 
 ### 3. Get Rates for Selected Currencies
 
-```bash
+```text
 curl "http://localhost:8082/api/rates?base=USD&targets=INR,AUD,EUR" \
   -H "X-API-KEY: demo-key-123"
 ```
@@ -126,70 +129,20 @@ Sample response:
 
 ### 4. List Supported Currencies
 
-```bash
+```text
 curl http://localhost:8082/api/currencies \
   -H "X-API-KEY: demo-key-123"
 ```
 
-```
-## Common Errors
-
-### Missing API Key
-
-```json
-{
-  "status": 401,
-  "error": "Unauthorized",
-  "message": "Missing or invalid API key"
-}
-```
-
-### Invalid Currency Code
-
-Currency codes must be 3-letter ISO codes such as `USD`, `INR`, `AUD`, or `EUR`.
-
-## Build and Test
-
-```bash
-mvn clean test
-mvn clean package
-```
-
-## Testing the API
-
-Start the application from the project root:
-
-```bash
-mvn clean spring-boot:run
-```
-
-The API runs on:
-
-```text
-http://localhost:8082
-```
-
-Use the following API key in all secured requests:
-
-```text
-X-API-KEY: demo-key-123
-```
 
 ## Postman Testing
 
 Use the Postman desktop application when testing locally.
 
-### Convert Currency
-
 Method:
 
 ```text
-POST
-```
-
-URL:
-
-```text
+POST URL:
 http://localhost:8082/api/conversions
 ```
 
@@ -210,28 +163,3 @@ Body:
 }
 ```
 
-Additional sample requests can be tested using the same endpoint.
-
-```json
-{
-  "fromCurrency": "AUD",
-  "toCurrency": "AED",
-  "amount": 250
-}
-```
-
-```json
-{
-  "fromCurrency": "CAD",
-  "toCurrency": "AUD",
-  "amount": 150
-}
-```
-
-```json
-{
-  "fromCurrency": "AED",
-  "toCurrency": "CAD",
-  "amount": 500
-}
-```
