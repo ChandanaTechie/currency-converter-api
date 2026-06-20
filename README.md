@@ -4,7 +4,7 @@ A beginner-friendly Java Spring Boot project for converting currencies, checking
 
 ## Tech Stack
 
-- Java 21
+- Java 25
 - Spring Boot
 - Spring Web
 - Spring Data JPA
