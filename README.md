@@ -31,7 +31,7 @@ currency-converter-api
 ├── README.md
 └── src
     ├── main
-    │   ├── java/com/example/currencyconverter
+    │   ├── java/com/currency/converter
     │   │   ├── config
     │   │   ├── controller
     │   │   ├── dto
@@ -43,14 +43,6 @@ currency-converter-api
     └── test
 ```
 
-## Run the Project
-
-Requirements:
-
-- Java 21
-- Maven 3.9+
-
-From the project folder:
 
 ```bash
 mvn spring-boot:run
@@ -59,7 +51,7 @@ mvn spring-boot:run
 The application will start at:
 
 ```text
-http://localhost:8080
+http://localhost:8082
 ```
 
 ## Demo API Keys
@@ -78,11 +70,10 @@ src/main/resources/application.yml
 ```
 
 ## API Endpoints
-
 ### 1. Convert Currency
 
 ```bash
-curl -X POST http://localhost:8080/api/conversions \
+curl -X POST http://localhost:8082/api/conversions \
   -H "Content-Type: application/json" \
   -H "X-API-KEY: demo-key-123" \
   -d '{
@@ -109,14 +100,14 @@ Sample response:
 ### 2. Get Conversion History
 
 ```bash
-curl http://localhost:8080/api/conversions/history \
+curl http://localhost:8082/api/conversions/history \
   -H "X-API-KEY: demo-key-123"
 ```
 
 ### 3. Get Rates for Selected Currencies
 
 ```bash
-curl "http://localhost:8080/api/rates?base=USD&targets=INR,AUD,EUR" \
+curl "http://localhost:8082/api/rates?base=USD&targets=INR,AUD,EUR" \
   -H "X-API-KEY: demo-key-123"
 ```
 
@@ -136,32 +127,11 @@ Sample response:
 ### 4. List Supported Currencies
 
 ```bash
-curl http://localhost:8080/api/currencies \
+curl http://localhost:8082/api/currencies \
   -H "X-API-KEY: demo-key-123"
 ```
 
-## H2 Database Console
-
-Open:
-
-```text
-http://localhost:8080/h2-console
 ```
-
-Use these values:
-
-```text
-JDBC URL: jdbc:h2:mem:currencydb
-User Name: sa
-Password: leave blank
-```
-
-Query saved conversion history:
-
-```sql
-SELECT * FROM CONVERSION_HISTORY;
-```
-
 ## Common Errors
 
 ### Missing API Key
@@ -265,170 +235,3 @@ Additional sample requests can be tested using the same endpoint.
   "amount": 500
 }
 ```
-
-### Get Conversion History
-
-Method:
-
-```text
-GET
-```
-
-URL:
-
-```text
-http://localhost:8082/api/conversions/history
-```
-
-Header:
-
-```text
-X-API-KEY: demo-key-123
-```
-
-### Get Supported Currencies
-
-Method:
-
-```text
-GET
-```
-
-URL:
-
-```text
-http://localhost:8082/api/currencies
-```
-
-Header:
-
-```text
-X-API-KEY: demo-key-123
-```
-
-### Get Exchange Rates
-
-Method:
-
-```text
-GET
-```
-
-URL:
-
-```text
-http://localhost:8082/api/rates?base=USD&targets=AUD,AED,CAD
-```
-
-Header:
-
-```text
-X-API-KEY: demo-key-123
-```
-
-## PowerShell Testing
-
-The API can also be tested directly from PowerShell.
-
-### Convert USD to AUD
-
-```powershell
-curl.exe -X POST "http://localhost:8082/api/conversions" -H "X-API-KEY: demo-key-123" -H "Content-Type: application/json" -d "{\"fromCurrency\":\"USD\",\"toCurrency\":\"AUD\",\"amount\":100}"
-```
-
-### Convert AUD to AED
-
-```powershell
-curl.exe -X POST "http://localhost:8082/api/conversions" -H "X-API-KEY: demo-key-123" -H "Content-Type: application/json" -d "{\"fromCurrency\":\"AUD\",\"toCurrency\":\"AED\",\"amount\":250}"
-```
-
-### Convert CAD to AUD
-
-```powershell
-curl.exe -X POST "http://localhost:8082/api/conversions" -H "X-API-KEY: demo-key-123" -H "Content-Type: application/json" -d "{\"fromCurrency\":\"CAD\",\"toCurrency\":\"AUD\",\"amount\":150}"
-```
-
-### Convert AED to CAD
-
-```powershell
-curl.exe -X POST "http://localhost:8082/api/conversions" -H "X-API-KEY: demo-key-123" -H "Content-Type: application/json" -d "{\"fromCurrency\":\"AED\",\"toCurrency\":\"CAD\",\"amount\":500}"
-```
-
-### Get Conversion History
-
-```powershell
-curl.exe "http://localhost:8082/api/conversions/history" -H "X-API-KEY: demo-key-123"
-```
-
-### Get Supported Currencies
-
-```powershell
-curl.exe "http://localhost:8082/api/currencies" -H "X-API-KEY: demo-key-123"
-```
-
-### Get Exchange Rates
-
-```powershell
-curl.exe "http://localhost:8082/api/rates?base=USD&targets=AUD,AED,CAD" -H "X-API-KEY: demo-key-123"
-```
-
-## Running the Test Script
-
-A PowerShell test script is available in the `scripts` folder.
-
-From the project root, run:
-
-```powershell
-.\scripts\test-api.ps1
-```
-
-If script execution is blocked, enable script execution for the current PowerShell session only:
-
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-```
-
-Then run the script again:
-
-```powershell
-.\scripts\test-api.ps1
-```
-
-The direct `curl.exe` commands above can be used if the script is blocked by local PowerShell settings.
-
-## H2 Database Verification
-
-Open the H2 console in a browser:
-
-```text
-http://localhost:8082/h2-console
-```
-
-Use the following connection details:
-
-```text
-JDBC URL: jdbc:h2:mem:currencydb
-User Name: sa
-Password: 
-```
-
-Run this query to check saved conversion history:
-
-```sql
-SELECT * FROM CONVERSION_HISTORY ORDER BY CREATED_AT DESC;
-```
-
-To clear test data:
-
-```sql
-DELETE FROM CONVERSION_HISTORY;
-```
-
-## Invalid API Key Check
-
-The API should reject requests with an invalid key.
-
-```powershell
-curl.exe "http://localhost:8082/api/currencies" -H "X-API-KEY: wrong-key"
-```
-

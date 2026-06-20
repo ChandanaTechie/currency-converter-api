@@ -5,7 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7f5502e-6231-474a-b2ca-5f2ece2fa1bf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/CurrencyConverterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/CurrencyConverterApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/config/ApiKeyAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/config/ApiKeyAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/config/ApiKeyProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/config/ApiKeyProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/config/RestClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/config/RestClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/controller/CurrencyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/controller/CurrencyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/dto/ConversionRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/dto/ConversionRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/dto/ConversionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/dto/ConversionResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/dto/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/dto/ErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/dto/RateResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/dto/RateResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/entity/ConversionHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/entity/ConversionHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/exception/ExternalRateException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/exception/ExternalRateException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/exception/InvalidCurrencyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/exception/InvalidCurrencyException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/repository/ConversionHistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/repository/ConversionHistoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/service/CurrencyConversionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/service/CurrencyConversionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/service/CurrencyValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/service/CurrencyValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/currencyconverter/service/FrankfurterClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/currency/converter/service/FrankfurterClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/currencyconverter/service/CurrencyConversionServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/currency/converter/service/CurrencyConversionServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/CurrencyConverterApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/config/ApiKeyAuthFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/config/ApiKeyProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/config/RestClientConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/controller/CurrencyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/dto/ConversionRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/dto/ConversionResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/dto/ErrorResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/dto/RateResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/entity/ConversionHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/exception/ExternalRateException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/exception/InvalidCurrencyException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/repository/ConversionHistoryRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/service/CurrencyConversionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/service/CurrencyValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/currencyconverter/service/FrankfurterClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/currency-converter-api-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/currency-converter-api-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.currencyconverter.service.CurrencyConversionServiceTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.currencyconverter.service.CurrencyConversionServiceTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/currencyconverter/service/CurrencyConversionServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +59,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="INCOMING_COMMITS_CHECK_STRATEGY" value="FETCH" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -26,16 +73,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.currency-converter-api [clean,test].executor": "Run",
     "Maven.currency-converter-api [clean].executor": "Run",
     "Maven.currency-converter-api [install].executor": "Run",
+    "Maven.currency-converter-api [package].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.CurrencyConverterApplication (1).executor": "Run",
     "Spring Boot.CurrencyConverterApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
+    "git.auto.fetch.suggestion.counter": "1",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/chand/workspace/currency-converter-api",
     "nodejs_package_manager_path": "npm",
@@ -44,7 +95,21 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.CurrencyConverterApplication (1)">
+    <configuration name="CurrencyConverterApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="currency-converter-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.currency.converter.CurrencyConverterApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.currency.converter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CurrencyConverterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="currency-converter-api" />
@@ -61,6 +126,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CurrencyConverterApplication (1)" />
         <item itemvalue="Spring Boot.CurrencyConverterApplication" />
       </list>
     </recent_temporary>
