@@ -1,0 +1,81 @@
+{
+  "info": {
+    "name": "Currency Converter API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Convert Currency",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "X-API-KEY", "value": "demo-key-123" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"fromCurrency\": \"USD\",\n  \"toCurrency\": \"INR\",\n  \"amount\": 100\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/conversions",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "conversions"]
+        }
+      }
+    },
+    {
+      "name": "Get History",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "X-API-KEY", "value": "demo-key-123" }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/conversions/history",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "conversions", "history"]
+        }
+      }
+    },
+    {
+      "name": "Get Rates",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "X-API-KEY", "value": "demo-key-123" }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/rates?base=USD&targets=INR,AUD,EUR",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "rates"],
+          "query": [
+            { "key": "base", "value": "USD" },
+            { "key": "targets", "value": "INR,AUD,EUR" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "List Currencies",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "X-API-KEY", "value": "demo-key-123" }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/currencies",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "currencies"]
+        }
+      }
+    }
+  ]
+}
