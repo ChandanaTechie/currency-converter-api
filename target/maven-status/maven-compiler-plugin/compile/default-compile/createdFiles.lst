@@ -1,0 +1,17 @@
+com\example\currencyconverter\CurrencyConverterApplication.class
+com\example\currencyconverter\dto\ConversionResponse.class
+com\example\currencyconverter\exception\ExternalRateException.class
+com\example\currencyconverter\config\ApiKeyProperties.class
+com\example\currencyconverter\dto\ErrorResponse.class
+com\example\currencyconverter\dto\RateResponse.class
+com\example\currencyconverter\service\FrankfurterClient.class
+com\example\currencyconverter\exception\InvalidCurrencyException.class
+com\example\currencyconverter\controller\CurrencyController.class
+com\example\currencyconverter\repository\ConversionHistoryRepository.class
+com\example\currencyconverter\config\RestClientConfig.class
+com\example\currencyconverter\exception\GlobalExceptionHandler.class
+com\example\currencyconverter\config\ApiKeyAuthFilter.class
+com\example\currencyconverter\dto\ConversionRequest.class
+com\example\currencyconverter\entity\ConversionHistory.class
+com\example\currencyconverter\service\CurrencyValidator.class
+com\example\currencyconverter\service\CurrencyConversionService.class
